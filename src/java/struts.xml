@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+  "-// Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+  "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="default" extends="struts-default">
+    <!-- actions -->
+        <action name="ListarClientes" class="actions.ListarClientesAction">
+            <result name="success">listar.jsp</result>
+        </action>
+        <action name="CriarCliente" class="actions.CriarClienteAction">
+            <result name="success">listar.jsp</result>
+        </action>
+        <action name="ObterCliente" class="actions.ObterClienteAction">
+            <result name="success">atualizar.jsp</result>
+        </action>
+        <action name="AtualizarCliente" class="actions.AtualizarClienteAction">
+            <result name="success">listar.jsp</result>
+        </action>
+        <action name="DeletarCliente" class="actions.DeletarClienteAction">
+            <result name="success">listar.jsp</result>
+        </action>
+    </package>
+</struts>
